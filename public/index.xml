@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NoodleOps</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on NoodleOps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>http://localhost:1313/posts/2024-12-markdown-syntax/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2024-12-markdown-syntax/</guid>
+      
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/about/</guid>
+      
+      <description>&lt;h2 id=&#34;about-noodleops&#34;&gt;About NoodleOps&lt;/h2&gt;
+&lt;p&gt;NoodleOps is a place where I share my thoughts, experiences, and knowledge about networking, technology, and other related (or not) topics.&lt;/p&gt;
+&lt;p&gt;The initial idea was for me to track, document the different projects I have been working on, things that I&amp;rsquo;ve learned, experienced, wheteher successful or not. Up until now, I have been using various platforms to write my notes, but I have decided to create a blog to force myself to better document my notes and if they can be useful to others, then that&amp;rsquo;s a bonus.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

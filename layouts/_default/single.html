@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">{{ .Title }}</h1>
+                {{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
+                {{ with .Date }}
+                {{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
+                <div class="post-meta">
+                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }} </time>
+                </div>
+                {{ end }}
+
+                {{/* Last Modified Date Section */}}
+                {{ if .Lastmod }}
+                    {{ $initialDate := .Lastmod.Format "2006-01-02" }}
+                    {{ $publishDate := .Date.Format "2006-01-02" }}
+                    {{ if ne $lastmod $publishDate }}
+                        <div class="post-info-last-mod">
+                            (Updated: 
+                            <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}" title="{{ .Lastmod.Format $configDateFormat }}">
+                                {{ .Lastmod.Format $configDateFormat }}
+                            </time>)
+                        </div>
+                    {{ end }}
+                {{ end }}
+
+            </header>
+            {{ partial "toc.html" .}}
+            <div class="page-content">
+                {{ .Content }}
+            </div>
+        </article>
+        {{- partial "comments.html" . -}}
+    </main>
+</div>
+{{ end }}
