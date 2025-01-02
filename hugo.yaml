@@ -1,5 +1,41 @@
 baseURL: https://example.org/
-languageCode: en-us
+languageCode: en-gb
 title: My New Hugo Site
 
 theme: PaperMod
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+      # unsafe: false
+
+params:
+  # defaultTheme: light
+  # defaultTheme: dark
+  defaultTheme: auto # to switch between dark or light according to browser theme
+
+  profileMode:
+    enabled: true
+    title: "NoodleOps" # optional default will be site title
+    subtitle: "Noodling Through Network and Technology"
+    imageUrl: "logo150.png" # optional
+    imageTitle: "NoodleOps logo" # optional
+    imageWidth: 150 # custom size
+    imageHeight: 150 # custom size
+    buttons:
+      # - name: Home
+      #   url: "/"
+      - name: Posts
+        url: "/posts"
+      # - name: Archive
+      #   url: "/archive"
+      - name: Other
+        url: "/other"
+      - name: About
+        url: "/about"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/sdargoeuves"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/seb-dargoeuves/"
