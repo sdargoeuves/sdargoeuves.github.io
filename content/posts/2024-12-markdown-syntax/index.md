@@ -73,14 +73,15 @@ Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-
 
    Name | Age
 --------|------
+
     Bob | 27
   Alice | 23
 
 ### Markdown within tables
 
-| Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
+Italics   | Bold     | Code
+--------  | -------- | ------
+_italics_ | **bold** | `code`
 
 ## Code Blocks
 
