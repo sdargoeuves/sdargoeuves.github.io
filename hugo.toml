@@ -1,6 +1,7 @@
 baseURL = "https://noodleops.space/"
 title = "NoodleOps"
 theme = "hugo-blog-awesome"
+googleAnalytics = "G-5T5QG6PNJ5"
 
 # This defines how dates are formatted
 defaultContentLanguage = "en-gb"
