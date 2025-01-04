@@ -1,9 +1,10 @@
 ---
-date: '2025-01-02T23:53:59Z'
-draft: false
 title: 'About'
+date: '2025-01-02'
+draft: false
 description: About NoodleOps and the author
 author: Seb d'Argoeuves
+layout: "about"
 ---
 
 ## NoodleOps

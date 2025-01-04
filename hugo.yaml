@@ -28,22 +28,22 @@ languages:
       main:
         - name: Posts
           url: posts
-          weight: 1
-        - name: Archives
-          url: archives
-          weight: 5
-        - name: Search
-          url: search/
           weight: 10
         - name: Tags
           url: tags/
           weight: 20
         - name: Other
           url: other/
+          weight: 25
+        - name: Archives
+          url: archives
           weight: 30
+        - name: Search
+          url: search/
+          weight: 40
         - name: About
           url: about/
-          weight: 40
+          weight: 50
         # - name: GitHub
         #   url: https://github.com/sdargoeuves/
         #   weight: 50
