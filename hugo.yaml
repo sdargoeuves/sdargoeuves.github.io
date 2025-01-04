@@ -1,24 +1,75 @@
 baseURL: https://example.org/
-languageCode: en-gb
-title: My New Hugo Site
+languageCode: en-GB
+title: NoodleOps
 
+# Theme
 theme: PaperMod
+
+# This defines how dates are formatted
+# defaultContentLanguage: "en-gb"
+
+enableGitInfo: true
+enableEmoji: true # Enable emojis globally
+
 markup:
   goldmark:
     renderer:
       unsafe: true
-      # unsafe: false
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Posts
+          url: posts
+          weight: 1
+        - name: Archives
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 20
+        - name: Other
+          url: other/
+          weight: 30
+        - name: About
+          url: about/
+          weight: 40
+        # - name: GitHub
+        #   url: https://github.com/sdargoeuves/
+        #   weight: 50
 
 params:
-  # defaultTheme: light
-  # defaultTheme: dark
-  defaultTheme: auto # to switch between dark or light according to browser theme
+  defaultTheme: auto # switch according to browser theme
+
+  homeInfoParams:
+    enabled: false
+    Title: NoodleOps
+    Content: "Noodling Through Network and Technology"
+
+  assets:
+    disableHLJS: true
+    favicon: "/img/favicon/favicon.ico"
+    favicon16x16: "/img/favicon/favicon-16x16.png"
+    favicon32x32: "/img/favicon/favicon-32x32.png"
+    favicon96x96: "/img/favicon/favicon-96x96.png"
+    apple_touch_icon: "/img/favicon/apple-touch-icon.png"
+    safari_pinned_tab: "/img/favicon/apple-touch-icon.png"
 
   profileMode:
     enabled: true
     title: "NoodleOps" # optional default will be site title
     subtitle: "Noodling Through Network and Technology"
-    imageUrl: "logo150.png" # optional
+    imageUrl: "logo-150-round.png" # optional
     imageTitle: "NoodleOps logo" # optional
     imageWidth: 150 # custom size
     imageHeight: 150 # custom size
@@ -33,9 +84,48 @@ params:
         url: "/other"
       - name: About
         url: "/about"
+      - name: Search
+        url: "/search"
 
   socialIcons:
     - name: github
       url: "https://github.com/sdargoeuves"
     - name: linkedin
       url: "https://www.linkedin.com/in/seb-dargoeuves/"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+  # ShowShareButtons: true
+  ShowReadingTime: true
+  ShowToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  hideFooter: false
+
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+cover:
+  image: "https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png"
+  # can also paste direct link from external site
+  # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+  alt: "<alt text>"
+  caption: "<text>"
+  relative: false # To use relative path for cover image, used in hugo Page-bundles
