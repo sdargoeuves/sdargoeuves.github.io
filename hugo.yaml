@@ -2,19 +2,114 @@ baseURL: https://noodleops.space/
 languageCode: en-GB
 title: NoodleOps
 
-# Theme
 theme: PaperMod
 
-# This defines how dates are formatted
-# defaultContentLanguage: "en-gb"
-
+defaultContentLanguage: en
 enableGitInfo: true
-enableEmoji: true # Enable emojis globally
+enableEmoji: true
 
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+# enableRobotsTXT: true
+# buildDrafts: false
+# buildFuture: false
+# buildExpired: false
+# pygmentsUseClasses: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: NoodleOps
+  description: "Noodling Through Network and Technology"
+  keywords: [Blog, Portfolio, PaperModX]
+  author: Seb d'Argoeuves
+  # DateFormat use the reference date from Go: Mon Jan 2 15:04:05 MST 2006
+  # https://pkg.go.dev/time#pkg-constants
+  # DateFormat: "January 2, 2006"
+  DateFormat: "2006-01-02"
+  defaultTheme: auto # dark, light
+
+  ShowShareButtons: false
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hideMeta: false # hide meta in home/list page
+  hideSummary: false # hide summary in home/list page
+  showToc: true
+  tocOpen: false
+
+  assets:
+    # disableHLJS: true
+    favicon: "/favicon/favicon.ico"
+    favicon16x16: "/favicon/favicon-16x16.png"
+    favicon32x32: "/favicon/favicon-32x32.png"
+    favicon96x96: "/favicon/favicon-96x96.png"
+    apple_touch_icon: "/favicon/apple-touch-icon.png"
+    safari_pinned_tab: "/favicon/apple-touch-icon.png"
+
+  label:
+    text: "NoodleOps"
+    icon: "/favicon/apple-touch-icon.png"
+    iconHeight: 50
+
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: "NoodleOps" # optional default will be site title
+    subtitle: "Noodling Through Network and Technology"
+    imageUrl: "logo-150-round.png" # optional
+    imageTitle: "NoodleOps logo" # optional
+    imageWidth: 150 # custom size
+    imageHeight: 150 # custom size
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+      # - name: Other
+      #   url: "/other"
+      - name: About
+        url: "/about"
+      - name: Search
+        url: "/search"
+
+  homeInfoParams:
+    Title: "Welcome to NoodleOps \U0001F44B"
+    Content: |+
+      _Noodling Through Network and Technology_
+      
+      This is my personal space for sharing thoughts, experiences, and knowledge on networking, technology, and other topics that I find interesting.
+      I hope you find something useful here. Feel free to reach out to me if you have any questions or feedback.
+
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/sdargoeuves"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/seb-dargoeuves/"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
 
 languages:
   en:
@@ -34,104 +129,25 @@ languages:
           identifier: tags
           url: /tags/
           weight: 20
-        - name: Other
-          identifier: other
-          url: /pages/other/
-          weight: 25
+        # - name: Other
+        #   identifier: other
+        #   url: /pages/other/
+        #   weight: 25
         - name: Archives
           identifier: archives
-          url: /archives/
+          url: archives
           weight: 30
         - name: Search
           identifier: search
-          url: /pages/search/
+          url: /search/
           weight: 40
         - name: About
           identifier: about
           url: /pages/about/
           weight: 50
-        # - name: GitHub
-        #   url: https://github.com/sdargoeuves/
-        #   weight: 50
-
-params:
-  defaultTheme: auto # switch according to browser theme
-
-  homeInfoParams:
-    enabled: false
-    Title: NoodleOps
-    Content: "Noodling Through Network and Technology"
-
-  assets:
-    disableHLJS: true
-    favicon: "/img/favicon/favicon.ico"
-    favicon16x16: "/img/favicon/favicon-16x16.png"
-    favicon32x32: "/img/favicon/favicon-32x32.png"
-    favicon96x96: "/img/favicon/favicon-96x96.png"
-    apple_touch_icon: "/img/favicon/apple-touch-icon.png"
-    safari_pinned_tab: "/img/favicon/apple-touch-icon.png"
-
-  profileMode:
-    enabled: true
-    title: "NoodleOps" # optional default will be site title
-    subtitle: "Noodling Through Network and Technology"
-    imageUrl: "logo-150-round.png" # optional
-    imageTitle: "NoodleOps logo" # optional
-    imageWidth: 150 # custom size
-    imageHeight: 150 # custom size
-    buttons:
-      # - name: Home
-      #   url: "/"
-      - name: Posts
-        url: "/posts"
-      # - name: Archive
-      #   url: "/archive"
-      - name: Other
-        url: "/other"
-      - name: About
-        url: "/about"
-      - name: Search
-        url: "/search"
-
-  socialIcons:
-    - name: github
-      url: "https://github.com/sdargoeuves"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/seb-dargoeuves/"
-
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
-
-  # ShowShareButtons: true
-  ShowReadingTime: true
-  ShowToc: true
-  TocOpen: false
-  ShowBreadCrumbs: true
-  ShowPostNavLinks: true
-  ShowCodeCopyButtons: true
-  hideFooter: false
-
-  ShowAllPagesInArchive: true
-  ShowPageNums: true
-
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON # necessary for search
-
-# cover:
-#   image: "https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png"
-#   # can also paste direct link from external site
-#   # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
-#   alt: "<alt text>"
-#   caption: "<text>"
-#   relative: false # To use relative path for cover image, used in hugo Page-bundles

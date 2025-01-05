@@ -1,12 +1,12 @@
 ---
 date: '2025-01-03T00:04:26Z'
-draft: false
+draft: true
 title: 'Other'
 
 searchHidden: true
-ShowReadingTime: false
-ShowBreadCrumbs: false
-ShowPostNavLinks: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
 ---
 
 ## New Page

@@ -1,19 +1,13 @@
 ---
-# title: 'About'
-# draft: false
-# description: About NoodleOps and the author
-# author: Seb d'Argoeuves
-date: '2025-01-04T10:53:59Z'
-# searchHidden: true
-# ShowReadingTime: false
-# ShowBreadCrumbs: false
-# ShowPostNavLinks: false
-draft: false
-title: 'About'
 
-searchHidden: true
+title: 'About'
+# description: About NoodleOps and the author
+author: Seb d'Argoeuves
+draft: true # draft will not appear in the Archive nor the Home page
+
+searchHidden: false
 ShowReadingTime: false
-ShowBreadCrumbs: false
+ShowBreadCrumbs: true
 ShowPostNavLinks: false
 ---
 

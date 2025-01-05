@@ -1,11 +1,9 @@
 ---
 title: Markdown Syntax Guide
-date: 2023-02-11
-lastmod: 2024-12-30
-initialdate: 2024-11-01
-author: Hugo Authors
 description: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
-isStarred: false
+date: 2024-11-29
+lastmod: 2024-12-30
+author: Hugo Authors
 tags: ["markdown", "html", "writing"]
 ---
 
