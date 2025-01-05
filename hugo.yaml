@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://noodleops.space/
 languageCode: en-GB
 title: NoodleOps
 
@@ -27,22 +27,28 @@ languages:
     menu:
       main:
         - name: Posts
-          url: posts
+          identifier: posts
+          url: /posts/
           weight: 10
         - name: Tags
-          url: tags/
+          identifier: tags
+          url: /tags/
           weight: 20
         - name: Other
-          url: other/
+          identifier: other
+          url: /pages/other/
           weight: 25
         - name: Archives
-          url: archives
+          identifier: archives
+          url: /archives/
           weight: 30
         - name: Search
-          url: search/
+          identifier: search
+          url: /pages/search/
           weight: 40
         - name: About
-          url: about/
+          identifier: about
+          url: /pages/about/
           weight: 50
         # - name: GitHub
         #   url: https://github.com/sdargoeuves/
@@ -122,10 +128,10 @@ outputs:
     - RSS
     - JSON # necessary for search
 
-cover:
-  image: "https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png"
-  # can also paste direct link from external site
-  # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
-  alt: "<alt text>"
-  caption: "<text>"
-  relative: false # To use relative path for cover image, used in hugo Page-bundles
+# cover:
+#   image: "https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png"
+#   # can also paste direct link from external site
+#   # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+#   alt: "<alt text>"
+#   caption: "<text>"
+#   relative: false # To use relative path for cover image, used in hugo Page-bundles
