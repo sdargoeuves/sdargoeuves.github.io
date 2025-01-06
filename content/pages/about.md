@@ -3,7 +3,7 @@
 title: 'About'
 # description: About NoodleOps and the author
 author: Seb d'Argoeuves
-draft: true # draft will not appear in the Archive nor the Home page
+draft: false
 
 searchHidden: false
 ShowReadingTime: false
