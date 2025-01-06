@@ -5,7 +5,7 @@ title: 'Creating my first Hugo website'
 ---
 
 <!-- Summary displayed (max 208 characters)-->
-A bit more about the process of creating this blog, why and how, and what I've learned so far... Read on to find out more!
+A bit more about the process of creating this blog, why and how, and what I've learned so far...
 <!--more-->
 
 ## Introduction
