@@ -4,11 +4,18 @@ description: Sample article showcasing basic Markdown syntax and formatting for 
 date: 2024-12-05
 lastmod: 2025-01-04
 author: Hugo Authors
-tags: ["markdown", "html", "writing"]
+categories:
+  - Markdown
+  - HTML
+  - Writing
+tags:
+  - markdown
+  - html
+  - writing
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
-<!--more-->
+<!-- more -->
 
 ## Headings
 

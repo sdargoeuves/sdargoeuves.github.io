@@ -1,12 +1,15 @@
 ---
-date: '2025-01-06T00:15:12Z'
+date: 2025-01-06
 draft: false
-title: 'Creating my first Hugo website'
+title: 'Creating my first Hugo website, and probably my last'
+categories:
+  - Hugo
+  - Blog
+  - Mkdocs
 ---
 
-<!-- Summary displayed (max 208 characters)-->
 A bit more about the process of creating this blog, why and how, and what I've learned so far...
-<!--more-->
+<!-- more -->
 
 ## Introduction
 
