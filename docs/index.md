@@ -1,6 +1,6 @@
 # Welcome to NoodleOps
 
-Created with [mkdocs.org](https://www.mkdocs.org).
+Created with [mkdocs.org](https://www.mkdocs.org) and the [Mkdocs-Material](https://squidfunk.github.io/mkdocs-material/) theme.
 
 ## Work in Progress
 
