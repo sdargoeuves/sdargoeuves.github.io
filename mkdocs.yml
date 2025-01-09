@@ -1,7 +1,6 @@
 site_name: NoodleOps
 site_url: https://noodleops.space/
 repo_url: https://github.com/sdargoeuves/sdargoeuves.github.io
-# repo_url: https://github.com/sdargoeuves
 
 theme:
   name: material
